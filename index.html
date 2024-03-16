@@ -1,13 +1,36 @@
 <!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
-
-
 <!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BASIC HTML STRUCTURE</title>
+  <!--<style>  REFERENCE CSS LINK HERE </style> -->
+  <link rel="stylesheet" type="text/css" href="C:\Users\FUJITSU\Desktop\Learning\web-technologies-level-1-hackathon\web-technologies-level-1-hackathon\style.css">
+  </head>
+  <body>
+    <section class="header">
+      <h1>ANUOLUWA</h1>
+    </section>
 
+    <section class="introduction">
+      <h2>Introduction</h2>
+      <p>
+        Hello, I'm Anuoluwa! I'm training to be a DevOps Engineer. This is just a short description of my paragraph with a red backgound color. Here is a direction below to know more about me.<br> <a href="https://www.facebook.com/ojoade.nm1" target="_blank">Facebook</a>
+      </p>
+      <!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
+    </section>
+    <h2>Image</h2>
+      <p>Here are Images that tell simple stories about Nigerian delicacy</p>
+    <section class="image-links">
+      <!-- <div class="image-links"> -->
+        <img src="C:\Users\FUJITSU\Pictures\ofada1.jpg" alt="image of ofada rice" width="500" height="500" />
+        <img src="C:\Users\FUJITSU\Pictures\ofada1.jpg" alt="image of ofada rice" width="500" height="500" />
+      <!--</div> -->
+    </section>
 
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
-
-
-<!-- 4. create another section add a form that takes in the following input:
+    <!-- 4. create another section add a form that takes in the following input:
   a. name
   b. email address
   c. phone number
@@ -20,5 +43,82 @@
   j. submit button with text register
   make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
 -->
+    <h3>STUDENT ENTRANCE FORM</h3>
+        <form Action="" Method="Post">
+            <fieldset>
+                <legend>PERSONAL INFO:</legend>
+                <label for ="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name here."><br>
+            <br>
+            <label for ="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Enter your email address."><br>
+            <br>
+            <label for ="phone Number">Phone Number:</label>
+            <input type="text" id="phone Number" name="phone Number" placeholder="Enter your phone Number."><br>
+            <br>
+            <label for ="age">Age:</label>
+            <input type="text" id="age" name="age" placeholder="Enter your age here."><br>
+            </fieldset>
+            <br/>
+            <fieldset>
+              <legend>Gender:</legend>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male:</label> 
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female:</label><br>
+          </fieldset>
+          <br>
+          <p>
+            Please select your prefered subjects.
+          </p>
+          <form id= "form2" >
+            <select width=300 style="width: 350px"
+                size="8" multiple>
+                <option value='' selected>
+                  Select subjects
+                  </option>
+              <option value='english Language'>English Language</option>
+              <option value='mathematics'>Mathematics</option>
+              <option value='science'>Science</option>
+              <option value='craft'>Craft</option>
+              <option value='art'>Art</option>
+              <option value='agriculture'>Agriculture</option>
+              <option value='geography'>Geography</option>
+              <option value='history'>History</option>
+            </select>
+          </form>
 
+            <br>
+            <fieldset>
+              <legend>Courses</legend>
+            <input type="checkbox" id="English Language" name="Courses" value="English Language">
+            <label for="english language">English Language</label><br>
+            <input type="checkbox" id="Mathematics" name="Courses" value="Mathematics">
+            <label for="mathematics">Mathematics:</label><br>
+            <input type="checkbox" id="Science" name="Courses" value="Science">
+            <label for="science">Science:</label><br>
+            <input type="checkbox" id="Craft" name="Courses" value="Craft">
+            <label for="craft">Craft:</label><br>
+            <input type="checkbox" id="Art" name="Courses" value="Art">
+            <label for="art">Art:</label><br>
+            <input type="checkbox" id="Agriculture" name="Courses" value="Agriculture">
+            <label for="agriculture">Agriculture:</label><br>
+            <input type="checkbox" id="Geography" name="Courses" value="Geography">
+            <label for="geography">Geography:</label><br>
+            <input type="checkbox" id="History" name="Courses" value="History">
+            <label for="history">History:</label><br>
+            <br>
+        </fieldset>
+        <br>
+            <label for ="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password here." aria-describedby="password hint"/>
+            <div id="password hint">
+                password must be at least 8 charater long.
+            </div><br>
+            <input type="hidden"/>
+            <button type="submit">Register</button>
+            <button type="submit">Cancel</button>
+    </form>
+  </body>
+  </html>
 <!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->

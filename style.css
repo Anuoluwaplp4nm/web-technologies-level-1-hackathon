@@ -1,1 +1,25 @@
 
+body {
+
+  .introduction {
+      background-color: #b30d0d; /* red background color */
+      padding: 25px; /* Padding around the content */
+      margin: 20px; /* Margin for spacing */
+      font-size: 15px;
+      color: rgb(252, 254, 255);
+    }
+  .image-links {
+    display: block;
+    border-width: 10px;
+    border-style: solid;
+    border-color: darkgreen;
+  }
+  /* Header styles */
+  .header {
+    background-color: #200364; /* blue background color */
+    padding: 20px; /* Padding around the content */
+    color: rgba(255, 255, 255, 0.884); /* Text color */
+    text-align: center; /* Center align the text */
+    font-size: x-large;
+  }
+}
